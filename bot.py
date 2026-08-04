@@ -391,9 +391,9 @@ def create_embed(title, description="", color=0x1a1a1a):
         description=truncate_text(description, 4096),
         color=color
     )
-    embed.set_thumbnail(url="https://i.imgur.com/Tv3clt0.jpeg")
+    embed.set_thumbnail(url="https://i.postimg.cc/k5mGPfzf/9bce4efacdd4bbc58c68ba24edd1f487.webp")
     embed.set_footer(text=f"{BOT_NAME} VPS Manager v{BOT_VERSION} • {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
-                     icon_url="https://i.imgur.com/Tv3clt0.jpeg")
+                     icon_url="https://i.postimg.cc/k5mGPfzf/9bce4efacdd4bbc58c68ba24edd1f487.webp")
     return embed
 
 def add_field(embed, name, value, inline=False):
@@ -2353,7 +2353,7 @@ async def system_status(ctx):
     
     # Footer with current time
     embed.set_footer(text=f"{BOT_NAME} System Status • Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
-                    icon_url="https://i.imgur.com/Tv3clt0.jpeg")
+                    icon_url="https://i.postimg.cc/k5mGPfzf/9bce4efacdd4bbc58c68ba24edd1f487.webp")
     
     await ctx.send(embed=embed)
 
