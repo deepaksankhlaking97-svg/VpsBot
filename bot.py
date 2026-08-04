@@ -16,15 +16,15 @@ import random
 import requests
 
 # Load environment variables
-DISCORD_TOKEN = os.getenv('DISCORD_TOKEN', 'MTM5Nzg1NTc1NzYyMTI2ODQ4MA.G3-M2l.UnHK26OevA8wqHaJzTDdk5JE0ZomxJmIViSqZ4')
-BOT_NAME = os.getenv('BOT_NAME', 'UnixNodes')
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN', 'YOUR_TOKEN_ENTER')
+BOT_NAME = os.getenv('BOT_NAME', 'KingCloud')
 PREFIX = os.getenv('PREFIX', '!')
 YOUR_SERVER_IP = os.getenv('YOUR_SERVER_IP', '127.0.0.1')
 MAIN_ADMIN_ID = int(os.getenv('MAIN_ADMIN_ID', '1210291131301101618'))
 VPS_USER_ROLE_ID = int(os.getenv('VPS_USER_ROLE_ID', '1210291131301101618'))
 DEFAULT_STORAGE_POOL = os.getenv('DEFAULT_STORAGE_POOL', 'default')
 BOT_VERSION = os.getenv('BOT_VERSION', '7.0-PRO')
-BOT_DEVELOPER = os.getenv('BOT_DEVELOPER', 'Hopingboz')
+BOT_DEVELOPER = os.getenv('BOT_DEVELOPER', 'Deepak')
 
 # OS Options for VPS Creation and Reinstall
 OS_OPTIONS = [
@@ -1987,7 +1987,7 @@ async def delete_vps(ctx, user: discord.Member, vps_number: int, *, reason: str 
     save_vps_data()
 
     # 4️⃣ Success embed
-    embed = create_success_embed("🌟 UnixNodes - VPS Deleted Successfully")
+    embed = create_success_embed("🌟 KingCloud - VPS Deleted Successfully")
     add_field(embed, "Owner", user.mention, True)
     add_field(embed, "VPS Number", f"#{vps_number}", True)
     add_field(embed, "Container", container_name, False)
@@ -2589,7 +2589,7 @@ async def user_info(ctx, user: discord.Member):
             inline=False
         )
 
-    embed.set_footer(text="UnixNodes • User Resource Dashboard")
+    embed.set_footer(text="KingCloud • User Resource Dashboard")
     embed.timestamp = ctx.message.created_at
 
     await ctx.send(embed=embed)
@@ -2709,7 +2709,7 @@ async def server_stats(ctx):
         inline=True
     )
 
-    embed.set_footer(text="UnixNodes • Real-Time Monitoring")
+    embed.set_footer(text="KingCloud • Real-Time Monitoring")
     embed.timestamp = ctx.message.created_at
 
     await ctx.send(embed=embed)
